@@ -26,7 +26,7 @@ jobs:
       - name: Download Pre Built Media Libraries Zip
         uses: robinraju/release-downloader@v1.6
         with:
-          repository: "MirrorX-Desktop/media_libraries_auto_build"
+          repository: "deep-soft/rust-media_libraries_auto_build"
           tag: "latest"
           fileName: "artifacts_windows_x64.zip"
       - name: Unzip Pre Built Media Libraries
