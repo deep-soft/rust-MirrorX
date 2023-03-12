@@ -91,6 +91,6 @@ jobs:
         with:
           #tag: ${{github.ref_name}}
           draft: ${{ env.DRAFT }}
-          tag_name: ${{ env.TAG_NAME }}
+          tag: ${{ env.TAG_NAME }}
           allowUpdates: true
           artifacts: "MirrorX_x64.zip"          
