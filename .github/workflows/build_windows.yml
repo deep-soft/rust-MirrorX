@@ -8,6 +8,8 @@ on:
 
 env:
   CARGO_TERM_COLOR: always
+  TAG_NAME: "pre"
+  DRAFT: true
 
 jobs:
   build:
@@ -87,6 +89,8 @@ jobs:
         #uses: ncipollo/release-action@v1
         uses: deep-soft/release-action@v1
         with:
-          artifacts: "MirrorX_x64.zip"
-          tag: ${{github.ref_name}}
+          #tag: ${{github.ref_name}}
+          draft: ${{ env.DRAFT }}
+          tag_name: ${{ env.TAG_NAME }}
           allowUpdates: true
+          artifacts: "MirrorX_x64.zip"          
